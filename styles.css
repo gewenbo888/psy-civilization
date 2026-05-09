@@ -1,56 +1,59 @@
 /* Psy Civilization · Psy 文明
-   Cinematic civilization-OS aesthetic · deep ink with restrained protocol gradients
-   Syne (display) · Geist Sans (body) · Geist Mono (mono) */
+   Canonical Psy brand · psy.xyz tokens · psi-glyph from psy.psyverse.fun
+   Cabin Condensed (display) · Inter (body) · JetBrains Mono (mono) */
 
 :root {
-  --bg: #06060c;
-  --surface: #0d0d18;
-  --surface-2: #13132a;
-  --surface-3: #1a1a35;
-  --border: rgba(232, 234, 245, 0.08);
-  --border-strong: rgba(232, 234, 245, 0.22);
+  --bg: #0a0a0c;
+  --surface: #0a0a0c;
+  --surface-2: #16161a;
+  --surface-3: #26262a;
+  --border: rgba(250, 250, 250, 0.10);
+  --border-strong: rgba(250, 250, 250, 0.22);
 
-  --ink: #e8eaf5;
-  --ink-dim: #9298b3;
-  --ink-mute: #5e6480;
+  --ink: #fafafa;
+  --ink-dim: #a3a3ab;
+  --ink-mute: #6e6e78;
 
-  --purple: #9a6bff;
-  --blue: #4d7cff;
-  --cyan: #5fd9ff;
-  --gold: #d4a755;
-  --rose: #ff7a8c;
+  --primary: #61f5b3;
+  --primary-soft: rgba(97, 245, 179, 0.12);
+  --primary-glow: rgba(97, 245, 179, 0.28);
 
-  --shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
-  --glow-purple: 0 0 30px rgba(154, 107, 255, 0.18);
-  --glow-cyan: 0 0 30px rgba(95, 217, 255, 0.18);
+  /* Aliases retained for legacy selectors — all map to canonical tokens */
+  --purple: var(--primary);
+  --blue:   var(--primary);
+  --cyan:   var(--primary);
+  --gold:   var(--ink-dim);
+  --rose:   var(--ink-dim);
+
+  --shadow: 0 18px 44px rgba(0, 0, 0, 0.55);
+  --glow-purple: 0 0 24px var(--primary-glow);
+  --glow-cyan:   0 0 24px var(--primary-glow);
 
   --radius: 4px;
   --radius-lg: 14px;
   --maxw: 1280px;
 
-  --display: "Syne", "Space Grotesk", system-ui, sans-serif;
-  --body: "Geist Sans", "Geist", "Inter Tight", system-ui, sans-serif;
-  --mono: "Geist Mono", "JetBrains Mono", ui-monospace, monospace;
+  --display: "Cabin Condensed", system-ui, sans-serif;
+  --body:    "Inter", system-ui, sans-serif;
+  --mono:    "JetBrains Mono", ui-monospace, monospace;
 }
 
 html[data-theme="light"] {
-  --bg: #f5f5fb;
+  --bg: #ffffff;
   --surface: #ffffff;
-  --surface-2: #ecedf6;
-  --surface-3: #e0e2f0;
-  --border: rgba(13, 13, 24, 0.13);
-  --border-strong: rgba(13, 13, 24, 0.30);
-  --ink: #0d0d18;
-  --ink-dim: #4f5470;
-  --ink-mute: #777d96;
-  --purple: #6b3ce0;
-  --blue: #2c4fcc;
-  --cyan: #1f8fbb;
-  --gold: #8a6a1f;
-  --rose: #b94250;
-  --shadow: 0 14px 36px rgba(13, 13, 24, 0.14);
-  --glow-purple: 0 0 28px rgba(107, 60, 224, 0.10);
-  --glow-cyan: 0 0 28px rgba(31, 143, 187, 0.10);
+  --surface-2: #f8f8f8;
+  --surface-3: #ebebed;
+  --border: rgba(10, 10, 12, 0.13);
+  --border-strong: rgba(10, 10, 12, 0.30);
+  --ink: #0a0a0c;
+  --ink-dim: #4f5260;
+  --ink-mute: #777a85;
+  --primary: #00b87b;
+  --primary-soft: rgba(0, 184, 123, 0.10);
+  --primary-glow: rgba(0, 184, 123, 0.20);
+  --shadow: 0 14px 32px rgba(10, 10, 12, 0.10);
+  --glow-purple: 0 0 22px var(--primary-glow);
+  --glow-cyan:   0 0 22px var(--primary-glow);
 }
 
 * { box-sizing: border-box; }
@@ -69,10 +72,10 @@ body {
 html[data-lang="en"] [lang="zh"] { display: none !important; }
 html[data-lang="zh"] [lang="en"] { display: none !important; }
 
-a { color: var(--cyan); text-decoration: none; }
+a { color: var(--primary); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-::selection { background: rgba(154, 107, 255, 0.4); color: var(--ink); }
+::selection { background: var(--primary-soft); color: var(--ink); }
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 32px; }
 
@@ -94,8 +97,13 @@ a:hover { text-decoration: underline; }
 }
 .brand-mark {
   width: 28px; height: 28px; flex: 0 0 auto;
+  background: var(--primary);
+  border-radius: 6px;
+  display: grid; place-items: center;
+  color: var(--bg);
+  box-shadow: 0 0 12px var(--primary-glow);
 }
-.brand-mark svg { width: 100%; height: 100%; display: block; }
+.brand-mark svg { width: 64%; height: 64%; display: block; }
 .brand small {
   font-family: var(--mono); font-size: 10.5px; color: var(--ink-mute);
   letter-spacing: 0.14em; text-transform: uppercase;
