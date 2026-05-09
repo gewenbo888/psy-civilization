@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en" data-lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Psy Civilization · Psy 文明</title>
+
+<!-- SEO · GEO -->
+<meta name="description" content="Psy Civilization — a civilization-scale exploration of decentralized cognition, autonomous coordination, and the next layer of human and machine infrastructure. Realms, recursive proofs, persistent identity, AI-native systems.">
+<meta name="keywords" content="Psy Protocol, Psy Civilization, decentralized cognition, autonomous coordination, civilization infrastructure, realms, recursive proofs, AI-native internet, shared state, distributed systems, philosophy of protocols, Psy 协议, 文明基建, AI 原生互联网">
+<meta name="author" content="Gewenbo">
+<link rel="canonical" href="https://psy-civilization.psyverse.fun/">
+<link rel="alternate" hreflang="en" href="https://psy-civilization.psyverse.fun/">
+<link rel="alternate" hreflang="zh-CN" href="https://psy-civilization.psyverse.fun/">
+<link rel="alternate" hreflang="x-default" href="https://psy-civilization.psyverse.fun/">
+
+<meta property="og:title" content="Psy Civilization · Psy 文明">
+<meta property="og:description" content="Decentralized cognition, autonomous coordination, and the future infrastructure of civilization.">
+<meta property="og:url" content="https://psy-civilization.psyverse.fun/">
+<meta property="og:site_name" content="Psyverse">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Psy Civilization">
+<meta name="twitter:description" content="The operating system of a future civilization.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#06060c">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Psy Civilization",
+  "alternateName": "Psy 文明",
+  "description": "Civilization-scale study of Psy Protocol as decentralized coordination infrastructure.",
+  "url": "https://psy-civilization.psyverse.fun/",
+  "inLanguage": ["en", "zh-CN"],
+  "author": { "@type": "Person", "name": "Gewenbo", "url": "https://psyverse.fun/" },
+  "publisher": { "@type": "Organization", "name": "Psyverse", "url": "https://psyverse.fun/" }
+}
+</script>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2306060c'/><circle cx='16' cy='16' r='10' fill='none' stroke='%239a6bff' stroke-width='1.4'/><circle cx='16' cy='16' r='5' fill='none' stroke='%235fd9ff' stroke-width='1.2'/><circle cx='16' cy='16' r='1.5' fill='%235fd9ff'/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<!-- Analytics -->
+<script src="https://analytics-dashboard-two-blue.vercel.app/tracker.js" defer></script>
+</head>
+<body>
+
+<!-- ─── Topbar ─────────────────────────────── -->
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 32 32" fill="none">
+          <circle cx="16" cy="16" r="13" stroke="url(#brand-grad)" stroke-width="1.4"/>
+          <circle cx="16" cy="16" r="6.5" stroke="#5fd9ff" stroke-width="1.2"/>
+          <circle cx="16" cy="16" r="2" fill="#5fd9ff"/>
+          <defs>
+            <linearGradient id="brand-grad" x1="0" y1="0" x2="32" y2="32">
+              <stop offset="0%" stop-color="#9a6bff"/>
+              <stop offset="50%" stop-color="#4d7cff"/>
+              <stop offset="100%" stop-color="#5fd9ff"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span lang="en">Psy Civilization</span>
+      <span lang="zh">Psy 文明</span>
+      <small>OS·001</small>
+    </div>
+    <nav class="nav">
+      <a href="#arch"><span lang="en">Architecture</span><span lang="zh">架构</span></a>
+      <a href="#timeline"><span lang="en">Timeline</span><span lang="zh">时间线</span></a>
+      <a href="#state"><span lang="en">Shared State</span><span lang="zh">共享状态</span></a>
+      <a href="#ai"><span lang="en">AI-Native</span><span lang="zh">AI 原生</span></a>
+      <a href="#sim"><span lang="en">Simulator</span><span lang="zh">模拟器</span></a>
+      <a href="#identity"><span lang="en">Identity</span><span lang="zh">身份</span></a>
+      <a href="#philosophy"><span lang="en">Philosophy</span><span lang="zh">哲学</span></a>
+      <a href="#theorist"><span lang="en">Theorist</span><span lang="zh">理论师</span></a>
+    </nav>
+    <div class="controls">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button data-lang-set="en" class="active">EN</button>
+        <button data-lang-set="zh">中文</button>
+      </div>
+      <div class="theme-toggle" role="group" aria-label="Theme">
+        <button data-theme-set="dark" class="active">Dark</button>
+        <button data-theme-set="light">Light</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ─── Hero ─────────────────────────────── -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-eyebrow">
+      <span class="badge"><span lang="en">Civilization Infrastructure · v0.1</span><span lang="zh">文明基建 · v0.1</span></span>
+      <span lang="en">A study of decentralized coordination at planetary scale</span>
+      <span lang="zh">行星尺度去中心化协调研究</span>
+    </div>
+    <h1>
+      <span lang="en">The operating system<br>of a <em>future civilization</em>.</span>
+      <span lang="zh"><em>未来文明</em>的<br>操作系统。</span>
+    </h1>
+    <p class="hero-sub">
+      <span lang="en">Every great civilizational leap rode on a new coordination substrate — writing, money, double-entry accounting, the printing press, the joint-stock corporation, the electric grid, the internet. Psy Protocol is read here not as a chain but as a candidate for the next such substrate: shared state, persistent identity, recursive validity, and a coordination layer that humans and AI agents can both operate inside.</span>
+      <span lang="zh">每一次伟大的文明跃迁,都依赖于一种新的协调基底——文字、货币、复式记账、印刷术、股份公司、电网、互联网。在本站,Psy Protocol 并不被读作一条链,而是被视为下一种基底的候选者:共享状态、持久身份、递归有效性,以及一个人类与 AI 智能体都可在其中运作的协调层。</span>
+    </p>
+    <div class="hero-cta">
+      <a href="#arch" class="btn btn-primary"><span lang="en">Read the architecture</span><span lang="zh">阅读架构</span></a>
+      <a href="#timeline" class="btn btn-ghost"><span lang="en">See the timeline</span><span lang="zh">查看时间线</span></a>
+    </div>
+    <div class="hero-meta">
+      <div>
+        <span>10</span>
+        <span lang="en">Modules</span><span lang="zh">个模块</span>
+      </div>
+      <div>
+        <span>EN · 中文</span>
+        <span lang="en">Bilingual</span><span lang="zh">中英双语</span>
+      </div>
+      <div>
+        <span lang="en">Civilizational</span><span lang="zh">文明尺度</span>
+        <span lang="en">Frame, not pitch</span><span lang="zh">框架,而非提案</span>
+      </div>
+      <div>
+        <span lang="en">No tokens</span><span lang="zh">不卖代币</span>
+        <span lang="en">Pure infrastructure</span><span lang="zh">纯基础设施视角</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Module 1 · Architecture ─────────────────────────────── -->
+<section class="module" id="arch">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag"><span class="num">01</span><span lang="en">Architecture</span><span lang="zh">架构</span></div>
+      <div>
+        <h2><span lang="en">Psy as a coordination substrate</span><span lang="zh">作为协调基底的 Psy</span></h2>
+        <p class="section-lede">
+          <span lang="en">Skip the marketing layer. The architecture below is a working description: realms partition execution, a coordinator orders and aggregates, recursive Plonky2 proofs over Goldilocks (with Poseidon hashing) compress arbitrarily many transitions into a single succinct artifact, and a persistent identity layer lets accounts (human or agent) carry reputation across applications and time.</span>
+          <span lang="zh">绕开营销层。下方架构是一份工程性描述:realm 分区执行,协调器排序与聚合,Goldilocks 域上的递归 Plonky2 证明(以 Poseidon 哈希)将任意多状态转移压缩为单一简洁证据,持久身份层让账户(人或智能体)跨应用、跨时间携带信誉。</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="arch-card">
+      <div class="arch-svg-wrap">
+        <svg class="arch-svg" viewBox="0 0 1280 760" role="img" aria-label="Psy architecture as civilization substrate">
+          <defs>
+            <linearGradient id="layer-1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#9a6bff" stop-opacity="0.20"/>
+              <stop offset="50%" stop-color="#4d7cff" stop-opacity="0.20"/>
+              <stop offset="100%" stop-color="#5fd9ff" stop-opacity="0.20"/>
+            </linearGradient>
+            <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#9a6bff"/>
+              <stop offset="100%" stop-color="#4d7cff"/>
+            </linearGradient>
+            <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4d7cff"/>
+              <stop offset="100%" stop-color="#5fd9ff"/>
+            </linearGradient>
+            <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#9a6bff" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#9a6bff" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Halos behind layers -->
+          <ellipse cx="640" cy="100" rx="500" ry="44" fill="url(#halo)" opacity="0.6"/>
+          <ellipse cx="640" cy="380" rx="540" ry="50" fill="url(#halo)" opacity="0.5"/>
+
+          <!-- Layer guides -->
+          <g stroke="rgba(232,234,245,0.08)" stroke-width="1">
+            <line x1="0" y1="60"  x2="1280" y2="60"/>
+            <line x1="0" y1="170" x2="1280" y2="170"/>
+            <line x1="0" y1="290" x2="1280" y2="290"/>
+            <line x1="0" y1="430" x2="1280" y2="430"/>
+            <line x1="0" y1="560" x2="1280" y2="560"/>
+            <line x1="0" y1="680" x2="1280" y2="680"/>
+          </g>
+
+          <!-- Layer labels -->
+          <g font-family="Geist Mono" font-size="11" fill="#5e6480" letter-spacing="2">
+            <text x="40"  y="44">L0 · APPLICATION</text>
+            <text x="40" y="154">L1 · IDENTITY</text>
+            <text x="40" y="274">L2 · STATE / REALMS</text>
+            <text x="40" y="414">L3 · EXECUTION</text>
+            <text x="40" y="544">L4 · CONSENSUS / VALIDITY</text>
+            <text x="40" y="664">L5 · SETTLEMENT</text>
+          </g>
+
+          <!-- L0 · Apps as civilization domains -->
+          <g>
+            <rect x="220" y="20" width="170" height="56" rx="10" fill="url(#primary-grad)"/>
+            <text x="305" y="48" text-anchor="middle" font-family="Syne" font-weight="600" font-size="14" fill="#06060c">Coordination</text>
+            <text x="305" y="64" text-anchor="middle" font-family="Geist Mono" font-size="10" fill="#06060c" opacity="0.75">协调</text>
+
+            <rect x="410" y="20" width="170" height="56" rx="10" fill="url(#primary-grad)"/>
+            <text x="495" y="48" text-anchor="middle" font-family="Syne" font-weight="600" font-size="14" fill="#06060c">Knowledge</text>
+            <text x="495" y="64" text-anchor="middle" font-family="Geist Mono" font-size="10" fill="#06060c" opacity="0.75">知识</text>
+
+            <rect x="600" y="20" width="170" height="56" rx="10" fill="url(#cyan-grad)"/>
+            <text x="685" y="48" text-anchor="middle" font-family="Syne" font-weight="600" font-size="14" fill="#06060c">Agent Economies</text>
+            <text x="685" y="64" text-anchor="middle" font-family="Geist Mono" font-size="10" fill="#06060c" opacity="0.75">智能体经济</text>
+
+            <rect x="790" y="20" width="170" height="56" rx="10" fill="url(#cyan-grad)"/>
+            <text x="875" y="48" text-anchor="middle" font-family="Syne" font-weight="600" font-size="14" fill="#06060c">Social Graphs</text>
+            <text x="875" y="64" text-anchor="middle" font-family="Geist Mono" font-size="10" fill="#06060c" opacity="0.75">社交图谱</text>
+
+            <rect x="980" y="20" width="170" height="56" rx="10" fill="url(#primary-grad)"/>
+            <text x="1065" y="48" text-anchor="middle" font-family="Syne" font-weight="600" font-size="14" fill="#06060c">Persistent Worlds</text>
+            <text x="1065" y="64" text-anchor="middle" font-family="Geist Mono" font-size="10" fill="#06060c" opacity="0.75">持久世界</text>
+          </g>
+
+          <!-- L1 · Identity -->
+          <g>
+            <rect x="220" y="120" width="930" height="60" rx="10" fill="url(#layer-1)" stroke="#5fd9ff" stroke-width="1.2"/>
+            <text x="685" y="146" text-anchor="middle" font-family="Syne" font-weight="600" font-size="16" fill="#5fd9ff">Persistent Identity Layer</text>
+            <text x="685" y="166" text-anchor="middle" font-family="Geist Mono" font-size="11" fill="#9298b3">psy-wallet · cross-app accounts · agent-owned keys · portable reputation · 持久身份层</text>
+          </g>
+
+          <!-- L2 · State / Realms -->
+          <g>
+            <rect x="220" y="240" width="200" height="60" rx="10" fill="rgba(154,107,255,0.08)" stroke="#9a6bff" stroke-width="1.2"/>
+            <text x="320" y="265" text-anchor="middle" font-family="Syne" font-weight="600" font-size="14" fill="#9a6bff">Realm 0</text>
+            <text x="320" y="284" text-anchor="middle" font-family="Geist Mono" font-size="10" fill="#9298b3">uid=0 · public · 公开</text>
+
+            <rect x="435" y="240" width="200" height="60" rx="10" fill="rgba(154,107,255,0.08)" stroke="#9a6bff" stroke-width="1.2"/>
+            <text x="535" y="265" text-anchor="middle" font-family="Syne" font-weight="600" font-size="14" fill="#9a6bff">Realm 1</text>
+            <text x="535" y="284" text-anchor="middle" font-family="Geist Mono" font-size="10" fill="#9298b3">uid=524288 · sovereign · 自治</text>
+
+            <rect x="650" y="240" width="200" height="60" rx="10" fill="rgba(154,107,255,0.08)" stroke="#9a6bff" stroke-width="1.2"/>
+            <text x="750" y="265" text-anchor="middle" font-family="Syne" font-weight="600" font-size="14" fill="#9a6bff">Realm n …</text>
+            <text x="750" y="284" text-anchor="middle" font-family="Geist Mono" font-size="10" fill="#9298b3">app-specific · 应用专属</text>
+
+            <rect x="865" y="240" width="285" height="60" rx="10" fill="rgba(95,217,255,0.06)" stroke="#5fd9ff" stroke-width="1.2"/>
+            <text x="1007" y="265" text-anchor="middle" font-family="Syne" font-weight="600" font-size="14" fill="#5fd9ff">IMT · Indexed Merkle Tree</text>
+            <text x="1007" y="284" text-anchor="middle" font-family="Geist Mono" font-size="10" fill="#9298b3">global state commitments · 全局状态承诺</text>
+          </g>
+
+          <!-- L3 · Execution -->
+          <g>
+            <rect x="220" y="380" width="600" height="60" rx="10" fill="rgba(77,124,255,0.08)" stroke="#4d7cff" stroke-width="1.2"/>
+            <text x="520" y="404" text-anchor="middle" font-family="Syne" font-weight="600" font-size="15" fill="#4d7cff">Execution · Contracts · Per-Realm Sandboxed VMs</text>
+            <text x="520" y="424" text-anchor="middle" font-family="Geist Mono" font-size="11" fill="#9298b3">合约执行 · 按 realm 隔离的虚拟机</text>
+
+            <rect x="840" y="380" width="310" height="60" rx="10" fill="rgba(77,124,255,0.08)" stroke="#4d7cff" stroke-width="1.2"/>
+            <text x="995" y="404" text-anchor="middle" font-family="Syne" font-weight="600" font-size="15" fill="#4d7cff">Indexer · GraphQL</text>
+            <text x="995" y="424" text-anchor="middle" font-family="Geist Mono" font-size="11" fill="#9298b3">索引层 · 可查询状态</text>
+          </g>
+
+          <!-- L4 · Coordinator + ZK -->
+          <g>
+            <rect x="220" y="510" width="600" height="60" rx="10" fill="url(#primary-grad)"/>
+            <text x="520" y="535" text-anchor="middle" font-family="Syne" font-weight="600" font-size="15" fill="#06060c">Coordinator · ordering · batching · proof aggregation</text>
+            <text x="520" y="555" text-anchor="middle" font-family="Geist Mono" font-size="10" fill="#06060c" opacity="0.75">协调器 · 排序 · 打包 · 证明聚合</text>
+
+            <rect x="840" y="510" width="310" height="60" rx="10" fill="rgba(154,107,255,0.10)" stroke="#9a6bff" stroke-width="1.2"/>
+            <text x="995" y="534" text-anchor="middle" font-family="Syne" font-weight="600" font-size="15" fill="#9a6bff">Plonky2 · Poseidon · Goldilocks</text>
+            <text x="995" y="554" text-anchor="middle" font-family="Geist Mono" font-size="11" fill="#9298b3">recursive ZK · 递归零知识</text>
+          </g>
+
+          <!-- L5 · Settlement -->
+          <g>
+            <rect x="220" y="630" width="930" height="60" rx="10" fill="rgba(232,234,245,0.04)" stroke="#9298b3" stroke-width="1.2"/>
+            <text x="685" y="654" text-anchor="middle" font-family="Syne" font-weight="600" font-size="15" fill="#e8eaf5">L1 Settlement · Ethereum bridge · validity-proof verifier</text>
+            <text x="685" y="674" text-anchor="middle" font-family="Geist Mono" font-size="11" fill="#9298b3">L1 结算 · 以太坊桥 · 有效性证明验证合约</text>
+          </g>
+
+          <!-- Vertical flow lines (animated) -->
+          <g stroke="#5fd9ff" stroke-width="1.2" fill="none" opacity="0.45" class="flow-line">
+            <line x1="305"  y1="76"  x2="305"  y2="120"/>
+            <line x1="495"  y1="76"  x2="495"  y2="120"/>
+            <line x1="685"  y1="76"  x2="685"  y2="120"/>
+            <line x1="875"  y1="76"  x2="875"  y2="120"/>
+            <line x1="1065" y1="76"  x2="1065" y2="120"/>
+            <line x1="685"  y1="180" x2="685"  y2="240"/>
+            <line x1="685"  y1="300" x2="685"  y2="380"/>
+            <line x1="685"  y1="440" x2="685"  y2="510"/>
+            <line x1="685"  y1="570" x2="685"  y2="630"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="card-row" id="archCards" style="margin-top:28px"></div>
+  </div>
+</section>
+
+<!-- ─── Module 2 · Civilization timeline ─────────────────────────── -->
+<section class="module" id="timeline">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag"><span class="num">02</span><span lang="en">Timeline</span><span lang="zh">时间线</span></div>
+      <div>
+        <h2><span lang="en">Five thousand years of coordination substrates</span><span lang="zh">五千年的协调基底</span></h2>
+        <p class="section-lede">
+          <span lang="en">Every named entry below is a coordination substrate that, once available, enabled forms of human organization that previously could not exist. The pattern is consistent: a new substrate appears, the categories of organization possible above it expand, and a few decades later it becomes invisible — assumed, not noticed.</span>
+          <span lang="zh">下方每一项,都是某种"一旦出现,便使先前不可能的人类组织形态成为可能"的协调基底。其模式一致:新基底出现 → 其上可能的组织形态扩张 → 数十年后它便变得不可见——被默认而非被察觉。</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-wrap">
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Module 3 · Shared state ─────────────────────────────── -->
+<section class="module" id="state">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag"><span class="num">03</span><span lang="en">Shared State</span><span lang="zh">共享状态</span></div>
+      <div>
+        <h2><span lang="en">Why a shared, synchronized world matters</span><span lang="zh">共享同步的世界状态为何关键</span></h2>
+        <p class="section-lede">
+          <span lang="en">Most economic friction comes from disagreement about state — who owns what, who agreed to what, who has done what. Banks, registries, courts, audit trails all exist to maintain a working approximation of shared state. A protocol that maintains it natively, with cryptographic evidence rather than institutional trust, is not just cheaper. It changes which kinds of organizations are economically viable.</span>
+          <span lang="zh">绝大多数经济摩擦,来自对"状态"的分歧——谁拥有什么、谁与谁达成了什么、谁做过什么。银行、登记处、法院、审计链皆为维持"共享状态的工作近似"而存在。原生维持该状态的协议——以密码学证据而非制度信任——不仅更便宜。它改变了哪种组织在经济上可行。</span>
+        </p>
+      </div>
+    </div>
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th><span lang="en">Coordination problem</span><span lang="zh">协调问题</span></th>
+          <th><span lang="en">Institutional solution</span><span lang="zh">制度解</span></th>
+          <th><span lang="en">Protocol-native solution</span><span lang="zh">协议原生解</span></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ─── Module 4 · AI-native ─────────────────────────────── -->
+<section class="module" id="ai">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag"><span class="num">04</span><span lang="en">AI-Native</span><span lang="zh">AI 原生</span></div>
+      <div>
+        <h2><span lang="en">An internet that AI agents can actually inhabit</span><span lang="zh">让 AI 智能体真正可栖居的互联网</span></h2>
+        <p class="section-lede">
+          <span lang="en">Today&apos;s AI agents borrow human credentials. Their wallets are their owners&apos;; their identities are their hosts&apos;; their memories die when their providers migrate. None of this is necessary. A protocol with persistent identity, native payment, recursive evidence of work, and sovereign memory makes agents into first-class economic actors. The transition is the same kind of transition that minor coinage caused for medieval traders — a small primitive change with large structural consequences.</span>
+          <span lang="zh">今日的 AI 智能体借用人类凭证:钱包属于其所有者,身份属于其托管商,记忆在提供商迁移时即死去。没有一处是必要的。一个具备持久身份、原生支付、工作的递归证据、与自治记忆的协议,把智能体变为一等经济行为者。这一过渡,与中世纪小额铸币之于商人的过渡同构——小的基元变更,大的结构性后果。</span>
+        </p>
+      </div>
+    </div>
+    <div class="card-row" id="aiCards"></div>
+  </div>
+</section>
+
+<!-- ─── Module 5 · Civilization simulator ─────────────────────────── -->
+<section class="module" id="sim">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag"><span class="num">05</span><span lang="en">Simulator</span><span lang="zh">模拟器</span></div>
+      <div>
+        <h2><span lang="en">Decentralized civilization simulator</span><span lang="zh">去中心化文明模拟器</span></h2>
+        <p class="section-lede">
+          <span lang="en">Pick a civilizational mode (centralized state, federated platforms, or protocol-native) and tune the levers. The simulator scores six structural outcomes across a 30-year horizon. It is not a forecast — it is a way of making the trade-offs each civilizational mode imposes legible.</span>
+          <span lang="zh">选择文明模式(中心化国家、联邦化平台、或协议原生),调节杠杆。模拟器在 30 年视野内对六项结构输出打分。它并非预测,而是把每种文明模式所施加的权衡显性化的方式。</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="sim-shell">
+      <div class="sim-controls">
+        <h3><span lang="en">Inputs</span><span lang="zh">输入</span></h3>
+        <label><span lang="en">Civilizational mode</span><span lang="zh">文明模式</span></label>
+        <select id="simMode"></select>
+        <label><span lang="en">Population scale (log)</span><span lang="zh">人口规模(对数)</span></label>
+        <input type="range" id="simPop" min="0" max="100" value="60"/>
+        <label><span lang="en">Agent-to-human ratio</span><span lang="zh">智能体/人类 比</span></label>
+        <input type="range" id="simAgents" min="0" max="100" value="30"/>
+        <label><span lang="en">Coordination openness</span><span lang="zh">协调开放度</span></label>
+        <input type="range" id="simOpen" min="0" max="100" value="60"/>
+        <label><span lang="en">Memory persistence</span><span lang="zh">记忆持久度</span></label>
+        <input type="range" id="simMemory" min="0" max="100" value="55"/>
+      </div>
+      <div class="sim-output">
+        <h3><span lang="en">Structural outcomes (30-year)</span><span lang="zh">结构性输出(30 年)</span></h3>
+        <div id="simBars"></div>
+        <div class="sim-readout" id="simReadout"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Module 6 · Knowledge ─────────────────────────────── -->
+<section class="module" id="knowledge">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag"><span class="num">06</span><span lang="en">Knowledge</span><span lang="zh">知识</span></div>
+      <div>
+        <h2><span lang="en">Civilization-scale memory beyond corporations</span><span lang="zh">超越公司之外的文明级记忆</span></h2>
+        <p class="section-lede">
+          <span lang="en">Most of humanity&apos;s digital memory is currently held by a handful of companies. This is not stable. Companies merge, fail, change priorities, accept regulatory takedowns, or simply forget to maintain old data. A protocol whose state can be reconstructed from a recursive proof and an L1 transcript can outlive any company that runs on top of it.</span>
+          <span lang="zh">人类的数字记忆,目前主要由少数公司持有。这并不稳定:公司合并、倒闭、改变优先级、接受监管下架,或干脆停止维护旧数据。一种"可由递归证明与 L1 交易记录重建状态"的协议,能比其上运行的任何公司更长寿。</span>
+        </p>
+      </div>
+    </div>
+    <div class="card-row" id="knowledgeCards"></div>
+  </div>
+</section>
+
+<!-- ─── Module 7 · Coordination markets ─────────────────────────── -->
+<section class="module" id="markets">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag"><span class="num">07</span><span lang="en">Coordination Markets</span><span lang="zh">协调市场</span></div>
+      <div>
+        <h2><span lang="en">When the firm dissolves into the protocol</span><span lang="zh">当公司溶入协议之时</span></h2>
+        <p class="section-lede">
+          <span lang="en">Firms exist because some functions are cheaper inside a hierarchy than across an open market. Protocols change the calculation by reducing the cost of cross-firm contracting, escrow, reputation, and dispute resolution. Some firm functions become protocol functions; others do not. We name them honestly.</span>
+          <span lang="zh">公司存在,是因为某些职能在层级内比开放市场更便宜。协议通过降低跨公司缔约、托管、信誉与争议解决的成本,改变了这一计算。一些公司职能将转化为协议职能;另一些不会。我们坦诚指明。</span>
+        </p>
+      </div>
+    </div>
+    <div class="card-row" id="coordCards"></div>
+  </div>
+</section>
+
+<!-- ─── Module 8 · Identity ─────────────────────────────── -->
+<section class="module" id="identity">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag"><span class="num">08</span><span lang="en">Identity</span><span lang="zh">身份</span></div>
+      <div>
+        <h2><span lang="en">Self-sovereign identity is load-bearing</span><span lang="zh">自治身份具承重作用</span></h2>
+        <p class="section-lede">
+          <span lang="en">In a world where AI agents outnumber humans on the open internet, &quot;who is doing what&quot; ceases to be answerable by IP address or platform login. Identity becomes the load-bearing primitive: who signs, what they have signed before, and what their reputation will tolerate them signing next. This applies to humans too — but the asymmetry is sharpest for agents.</span>
+          <span lang="zh">在 AI 智能体在公开互联网上数量超过人类的世界里,"谁在做什么"已无法由 IP 地址或平台登录回答。身份成为承重基元:谁签名、他们曾签什么、其信誉允许他们再签什么。这同样适用于人类——但对智能体而言这一不对称最为尖锐。</span>
+        </p>
+      </div>
+    </div>
+    <div class="card-row" id="identityCards"></div>
+  </div>
+</section>
+
+<!-- ─── Module 9 · Philosophy ─────────────────────────────── -->
+<section class="module" id="philosophy">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag"><span class="num">09</span><span lang="en">Philosophy</span><span lang="zh">哲学</span></div>
+      <div>
+        <h2><span lang="en">Decentralization is an architectural claim, not a slogan</span><span lang="zh">去中心化是架构主张,而非口号</span></h2>
+        <p class="section-lede">
+          <span lang="en">The word &quot;decentralization&quot; covers a wide spectrum of architectural claims, most of which are not interchangeable. Geographic decentralization, political decentralization, economic decentralization, and architectural decentralization are different problems with different solutions. A coordination protocol can be one without being the others. Below we distinguish them so the philosophy survives contact with engineering.</span>
+          <span lang="zh">"去中心化"一词涵盖一系列架构主张,其中大多并不可互换。地理去中心化、政治去中心化、经济去中心化、架构去中心化——这些是不同的问题,有不同的解。一个协调协议可以是其中之一,而不是其余。下文我们加以区分,使哲学经得起与工程学的接触。</span>
+        </p>
+      </div>
+    </div>
+    <div class="card-row" id="philCards"></div>
+  </div>
+</section>
+
+<!-- ─── Module 10 · Future civilization ─────────────────────────── -->
+<section class="module" id="future">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag"><span class="num">10</span><span lang="en">Future Layer</span><span lang="zh">未来层</span></div>
+      <div>
+        <h2><span lang="en">When civilization itself becomes programmable</span><span lang="zh">当文明本身成为可编程</span></h2>
+        <p class="section-lede">
+          <span lang="en">A century from now, several functions currently performed by states, corporations, and ad-hoc coalitions may sit instead in protocol-native institutions: planetary registries of scientific results, machine economies that operate while humans sleep, autonomous research collectives that hold their own grants. Whether these are utopian or dystopian depends on design choices being made now.</span>
+          <span lang="zh">百年之后,目前由国家、公司与临时联盟所执行的若干职能,可能改由协议原生制度承担:行星级科学成果登记、人类睡眠时仍运行的机器经济、持有自己经费的自主研究合作社。其结果是乌托邦还是反乌托邦,取决于此刻正在做的设计选择。</span>
+        </p>
+      </div>
+    </div>
+    <div class="card-row" id="futureCards"></div>
+  </div>
+</section>
+
+<!-- ─── AI Theorist ─────────────────────────────── -->
+<section class="module" id="theorist">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag"><span class="num">AI</span><span lang="en">Theorist</span><span lang="zh">理论师</span></div>
+      <div>
+        <h2><span lang="en">Ask the civilization theorist</span><span lang="zh">向文明理论师提问</span></h2>
+        <p class="section-lede">
+          <span lang="en">Five canned responses on protocol-civilization fit. Free-text input falls back to a heuristic synthesizer over the same knowledge base. I will not produce token marketing, vague crypto buzzwords, or pretend the future is settled.</span>
+          <span lang="zh">五个关于"协议-文明契合度"的预设回应。自由文本输入将回退到同一知识库上的启发式合成器。我不会输出代币营销、空泛加密行话,也不会假装未来已定。</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="ai-shell">
+      <div class="ai-prompts" id="aiPrompts"></div>
+      <div class="ai-input-row">
+        <input type="text" id="aiInput"
+          data-en-placeholder="Ask about coordination, identity, civilization infrastructure..."
+          data-zh-placeholder="提问关于协调、身份、文明基建..."
+          placeholder="Ask about coordination, identity, civilization infrastructure..."/>
+        <button id="aiSend"><span lang="en">Send</span><span lang="zh">发送</span></button>
+      </div>
+      <div class="ai-output" id="aiOutput">
+        <p><span lang="en"><em>Theorist · ready</em></span><span lang="zh"><em>理论师 · 待命</em></span></p>
+        <p>
+          <span lang="en">Pick a question above, or type your own. I reason from infrastructure, incentives, and historical analogues — not from speculation about token prices.</span>
+          <span lang="zh">从上方选择问题,或自行输入。我从基础设施、激励与历史类比推理——不从代币价格的揣测出发。</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Guardrails ─────────────────────────────── -->
+<section class="module" id="guards">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag"><span class="num">⚠</span><span lang="en">Guardrails</span><span lang="zh">防护栏</span></div>
+      <div>
+        <h2><span lang="en">What this platform refuses to do</span><span lang="zh">本平台拒绝做的事</span></h2>
+      </div>
+    </div>
+    <div class="guardrails">
+      <ul>
+        <li><span lang="en"><strong>No token marketing.</strong> Civilizational framing must not be a wrapper for token-sale narratives. The theorist is explicitly told not to terminate any answer in &quot;and then a token.&quot;</span>
+            <span lang="zh"><strong>不作代币营销。</strong>文明框架不可成为代币销售叙事的外包装。理论师被明确告知,不以"然后发个代币"作为任何答复的终点。</span></li>
+        <li><span lang="en"><strong>No utopian determinism.</strong> Every architectural choice creates winners and losers. Decentralization can produce more freedom and less accountability simultaneously. We name the trade-offs rather than pretending they do not exist.</span>
+            <span lang="zh"><strong>不作乌托邦决定论。</strong>每一项架构选择皆有赢家与输家。去中心化可同时带来更多自由与更少问责。我们指明权衡,而非假装其不存在。</span></li>
+        <li><span lang="en"><strong>No buzzword padding.</strong> &quot;Web3&quot;, &quot;revolutionary&quot;, &quot;next-generation everything&quot; — banned on the principle that such terms substitute vibe for design specification.</span>
+            <span lang="zh"><strong>不堆砌行话。</strong>"Web3"、"革命性"、"下一代万物"——禁用,理由是它们以氛围替代设计规约。</span></li>
+        <li><span lang="en"><strong>No false novelty.</strong> Most of the categories framed here have prior art with reasons it worked or failed. We name those reasons rather than pretending the category is new.</span>
+            <span lang="zh"><strong>不假装新颖。</strong>此处所述的多数类别皆有先例,各有运作或失败之理由。我们指名这些理由,而非伪装类别为新生。</span></li>
+        <li><span lang="en"><strong>Honest about the AI risk axis.</strong> Persistent identity for AI agents is structurally powerful and structurally dangerous. Concentration of agent reputation, attribution-of-action problems, and the possibility of agent collusion are real. We treat these as design constraints, not afterthoughts.</span>
+            <span lang="zh"><strong>对 AI 风险诚实。</strong>AI 智能体的持久身份在结构上既强大也危险。智能体信誉的集中、行为归责问题、智能体合谋可能性,皆为真实。我们将其视为设计约束,而非事后补丁。</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Footer ─────────────────────────────── -->
+<footer>
+  <div class="wrap foot-row">
+    <div>
+      <span lang="en">Psy Civilization · part of the </span>
+      <span lang="zh">Psy 文明 · </span>
+      <a href="https://psyverse.fun">Psyverse</a>
+      <span lang="zh"> 系列</span>
+      <span lang="en"> portfolio</span>
+      &nbsp;·&nbsp; © 2026 Gewenbo
+    </div>
+    <div class="links">
+      <a href="https://psy.psyverse.fun">psy.psyverse.fun</a>
+      <a href="https://psy-killer-apps.psyverse.fun">psy-killer-apps</a>
+      <a href="https://zk-civilization.psyverse.fun">zk-civilization</a>
+      <a href="https://psyverse.fun">psyverse.fun</a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
